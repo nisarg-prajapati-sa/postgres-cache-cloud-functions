@@ -34,7 +34,9 @@ export default async function handler(req, res) {
       res.status(200).send({ message: "Webhook data stored successfully" });
     } catch (error) {
       console.error("Error storing webhook data:", error);
-      res.status(500).send({ message: "Error storing webhook data" });
+      res
+        .status(500)
+        .send({ message: "Error storing webhook data", error: error });
     }
   }
 }
