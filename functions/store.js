@@ -1,11 +1,13 @@
 export default async function handler(req, res) {
   if (req.method == "POST") {
     // app.js
-    const postgres = require("postgres");
-    require("dotenv").config();
-
-    let { PGHOST, PGDATABASE, PGUSER, PGPASSWORD, ENDPOINT_ID } = process.env;
     try {
+      const postgres = require("postgres");
+      require("dotenv").config();
+
+      let { PGHOST, PGDATABASE, PGUSER, PGPASSWORD, ENDPOINT_ID } = process.env;
+      console.log(PGHOST);
+
       const sql = postgres({
         host: PGHOST,
         database: PGDATABASE,
@@ -17,7 +19,7 @@ export default async function handler(req, res) {
           options: `project=${ENDPOINT_ID}`,
         },
       });
-
+      console.log(sql);
       const payload = req.body.body;
       const httpRequestText = JSON.stringify(req.headers);
       const changesIn = payload.module;
