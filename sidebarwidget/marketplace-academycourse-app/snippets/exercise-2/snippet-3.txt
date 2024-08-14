@@ -1,5 +1,0 @@
-<Tag
-  version="v1"
-  tags={selectedItems}
-  onChange={(tags: any) => setSelectedItems(tags)}
-/>;

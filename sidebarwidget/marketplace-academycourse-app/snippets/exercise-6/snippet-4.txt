@@ -1,2 +1,0 @@
-const [contentTypeOptions, setContentTypeOptions] = useState<any[]>([]);
-const [selectedContentType, setSelectedContentType] = useState<any>("");

@@ -1,3 +1,0 @@
-import { Icon } from "@contentstack/venus-components";
-import React from "react";
-import { onClickHandler } from "./academy";

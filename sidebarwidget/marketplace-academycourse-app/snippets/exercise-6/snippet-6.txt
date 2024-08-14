@@ -1,3 +1,0 @@
-const handleDropdownChange = (e: any) => {
-  setSelectedContentType(e);
-};

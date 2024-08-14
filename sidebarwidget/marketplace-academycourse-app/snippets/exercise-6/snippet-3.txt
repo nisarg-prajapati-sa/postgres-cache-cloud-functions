@@ -1,3 +1,0 @@
-const { content_types } =
-  (await appSdk?.location?.FullPage?.stack?.getContentTypes()) || {};
-setContentTypes(content_types);

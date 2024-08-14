@@ -1,5 +1,0 @@
-useEffect(() => {
-  entriesCounts.forEach(
-    (_: any, index: any) => (itemStatusMap[index] = "loaded")
-  );
-}, [entriesCounts, itemStatusMap]);

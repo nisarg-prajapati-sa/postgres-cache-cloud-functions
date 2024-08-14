@@ -1,1 +1,0 @@
-import { InfiniteScrollTable } from "@contentstack/venus-components";

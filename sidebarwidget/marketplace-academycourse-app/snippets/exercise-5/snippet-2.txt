@@ -1,3 +1,0 @@
-const assetDataFromLocation =
-  await appSdk?.location?.AssetSidebarWidget?.getData();
-setAssetData(assetDataFromLocation);
